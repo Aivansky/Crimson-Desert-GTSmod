@@ -1,4 +1,4 @@
-the meta and 0036 are the packed files while the raw files are the editable ones that will need to be repacked into the 0036 and meta format before they can be be played, easy to use with JSON Mod Manager for Crimson Desert
+the meta and 0036 are the packed files that can be directly copy pasted into the game files and overwritten to apply changes while the raw files are the editable ones that will need to be repacked into the 0036 and meta format before they can be be played, easy to use with JSON Mod Manager for Crimson Desert
 
 to change size of characters, edit the CharacterScale on these xml files
 
