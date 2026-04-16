@@ -1,0 +1,27 @@
+﻿
+<Appearance>
+	<Customization CustomizationFile="cd_pc/cd_phw_nairah_customization" MeshParamFile="meshparam_example_kliff.xml" DecorationParamFile="decorationparam_player.xml"/>
+	<AudioInfo>
+		<SoundEvent Name="vce_pc_kliff"/>
+		<FootStepSoundEvent Name="sfx_fs_shoes_hum"/>
+		<FootStepLandSoundEvent Name="sfx_fs_land_hum"/>
+		<FootStepGroundSoundEvent Name="sfx_fs_ground"/>
+	</AudioInfo>
+	<Nude>
+		<Prefab Name="cd_phw_00_nude_00_0001_damian" CharacterScale="1.19"/>
+	</Nude>
+	<Head>
+		<Prefab Name="cd_phw_00_head_00_0013"/>
+	</Head>
+	<Hair>
+		<Prefab Name="cd_phw_00_hair_00_0506"/>
+        
+        
+        
+        
+	</Hair>
+	<Armor>
+		<Prefab Name="cd_phm_00_ub_0054_05"/>
+		<Prefab Name="cd_phm_00_foot_0054_01"/>
+	</Armor>
+</Appearance>

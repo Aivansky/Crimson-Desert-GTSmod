@@ -1,0 +1,823 @@
+﻿<!-- Alarm(jinpark) :	인덱스에 빈 공간이 있어서는 안됩니다. -->
+<!--					중간에 계획 변경으로 인해 일부 커마 파라메터를 사용하지 않을 예정이시라면 dummy 데이터를 세팅하시는 것을 권장드립니다. -->
+
+<!-- 각 인덱스 매핑 -->
+<!-- 0: Body -->
+<!-- 1: Head -->
+<!-- 2: Hair -->
+<!-- 3: Beard -->
+<!-- 4: Mustache -->
+<!-- 5: Whiskers -->
+<!-- 6: Eyebrows -->
+<!-- ParamDesc Index가 변경되는 경우 반드시 DecorationParam에서 지정되는 MeshParamIndex도 확인해주셔야합니다. -->
+
+<!-- DecorationParamIndex : DecorationParam 파일의 Index를 가리킵니다. (DecorationParam File이 여러개가 되면서 각 Deocration Element마다 다른 Index를 부여받을 수 있다면 Tag형식으로 변경해야합니다.) -->
+<!-- MinValue : 앞에서 지정한 DecorationParamIndex와 동일한 개수여야하며 각 순서대로 MinValue를 지정할 수 있습니다. -->
+
+<!-- <GroupIconPath 예시>
+<ParamDesc Index="3" Default="0" GroupIconPath="character/texture/cd_phm_00_head_tattoo_0001.dds">
+		<MeshSet Index="0" DecorationParamIndex="29" MinValue="65">
+			<MeshList MeshFileName="cd_phm_00_beard_00_0005_06" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phm_00_beard_00_0005_06.dds"/>
+		</MeshSet>
+</ParamDesc> -->
+
+
+<MeshParam>
+	<ParamDesc Index="0" Default = "0">
+		
+	</ParamDesc>
+
+	<ParamDesc Index="1" Default = "0">
+		
+	</ParamDesc>
+	
+	<ParamDesc Index="2" Default = "0" UIKey="hairShape">
+		<MeshSet Index="0" DecorationParamIndex="0 1 2" MinValue="50 50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0008_01_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phw_00_hair_00_0008_01.dds"/>
+</MeshSet>
+<MeshSet Index="1" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phw_00_hair_00_0507_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phw_00_hair_00_0507.dds"/>
+</MeshSet>
+<MeshSet Index="2" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phw_00_hair_00_0018_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phw_00_hair_00_0018.dds"/>
+</MeshSet>
+<MeshSet Index="3" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phw_00_hair_00_0504_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phw_00_hair_00_0504.dds"/>
+</MeshSet>
+<MeshSet Index="4" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0022_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phm_00_hair_00_0022.dds"/>
+</MeshSet>
+<MeshSet Index="5" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0008_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phm_00_hair_00_0008.dds"/>
+</MeshSet>
+<MeshSet Index="6" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0016_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phm_00_hair_00_0016.dds"/>
+</MeshSet>
+<MeshSet Index="7" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0016_01_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phm_00_hair_00_0016_01.dds"/>
+</MeshSet>
+<MeshSet Index="8" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0503_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phm_00_hair_00_0503.dds"/>
+</MeshSet>
+<MeshSet Index="9" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0512_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phm_00_hair_00_0512.dds"/>
+</MeshSet>
+<MeshSet Index="10" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0039_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_cd_phm_02_hair_00_0015.dds"/>
+</MeshSet>
+<MeshSet Index="11" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0003_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_oongka_cd_phm_00_hair_00_0003.dds"/>
+</MeshSet>
+<MeshSet Index="12" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0016_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_oongka_cd_phm_00_hair_00_0016.dds"/>
+</MeshSet>
+<MeshSet Index="13" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0026_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_oongka_cd_phm_00_hair_00_0026.dds"/>
+</MeshSet>
+<MeshSet Index="14" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0029_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_oongka_cd_phm_00_hair_00_0029.dds"/>
+</MeshSet>
+<MeshSet Index="15" DecorationParamIndex="0 1 2" MinValue="50 50 50">
+<MeshList MeshFileName="cd_phm_00_hair_00_0030_player" IconPath="ui/texture/image/customizeimage/CD_Itemicon_Barbershop_oongka_cd_phm_00_hair_00_0030.dds"/>
+</MeshSet>
+<MeshSet Index="16" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0001" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="17" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0001_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="18" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0002" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="19" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0003" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="20" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0004" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="21" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0005" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="22" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0006" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="23" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0006_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="24" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0006_02" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="25" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0006_03" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="26" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0006_04" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="27" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0006_05" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="28" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0006_06" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="29" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0007" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="30" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0007_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="31" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0007_02" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="32" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0007_03" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="33" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0007_04" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="34" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0007_05" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="35" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0008" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="36" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0008_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="37" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0021" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="38" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0008_02" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="39" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0008_03" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="40" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0008_04" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="41" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0008_05" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="42" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0008_06" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="43" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0009" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="44" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0010" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="45" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0010_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="46" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0010_02" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="47" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0010_03" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="48" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0010_04" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="49" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0010_06" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="50" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0011" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="51" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0012" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="52" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0013" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="53" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0014" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="54" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0014_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="55" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0015" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="56" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0016" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="57" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0016_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="58" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0016_02" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="59" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0017" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="60" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0018" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="61" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0022" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="62" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0501" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="63" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0504" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="64" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_ptm_00_hair_00_0001" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="65" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_ptm_00_hair_00_0002" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="66" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_ptm_00_hair_00_0003" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="67" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_ptm_01_hair_00_0009" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="68" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_ptm_01_hair_00_0021" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="69" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_ptm_01_hair_00_0024" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="70" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0505" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="71" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0505_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="72" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0506" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="73" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0507" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="74" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0508" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="75" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0509" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="76" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0512" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="77" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phw_00_hair_00_0513" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="78" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0000" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="79" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0001" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="80" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0002" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="81" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0003" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="82" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0004" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="83" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0005" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="84" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0005_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="85" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0006" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="86" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0007" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="87" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0008" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="88" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0009" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="89" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0010" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="90" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0011" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="91" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0012" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="92" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0015" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="93" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0015_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="94" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0016" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="95" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0016_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="96" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0017" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="97" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0017_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="98" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0018" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="99" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0019" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="100" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0020_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="101" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0021" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="102" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0021_uv" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="103" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0022" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="104" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0023" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="105" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0024" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="106" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0025" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="107" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0026" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="108" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0027" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="109" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0028" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="110" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0029" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="111" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0030" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="112" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0031" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="113" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0032" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="114" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0033" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="115" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0034" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="116" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0035" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="117" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0035_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="118" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0035_02" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="119" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0035_03" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="120" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0035_04" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="121" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0036" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="122" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0036" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="123" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0037" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="124" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0038" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="125" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0039" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="126" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0201" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="127" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0202" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="128" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0501" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="129" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0502" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="130" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0503" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="131" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0505" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="132" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0509" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="133" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0510" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="134" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0511" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="135" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0512" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="136" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_0513" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="137" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_00_hair_00_9999" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="138" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0002" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="139" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0004" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="140" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0006_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="141" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0006_03" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="142" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0006_05" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="143" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0007_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="144" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0008" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="145" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0008_03" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="146" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0008_04" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="147" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0008_05" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="148" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0008_06" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="149" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0010_02" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="150" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0010_06" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="151" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0011" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="152" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0012" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="153" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0013" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="154" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0014" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="155" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0015" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="156" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0015_01" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="157" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0501" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+<MeshSet Index="158" DecorationParamIndex="0 1" MinValue="50 50" >
+<MeshList MeshFileName="cd_phm_02_hair_00_0505" IconPath="ui/texture/image/customizeimage/cd_itemicon_barbershop_cd_phm_00_head_tattoo_0004.dds"/>
+</MeshSet>
+	</ParamDesc>
+	
+	<ParamDesc Index="3" Default="0" UIKey="beardShape">
+		
+	</ParamDesc>
+	
+	<ParamDesc Index="4" Default = "0">
+	
+
+	</ParamDesc>
+	
+	<ParamDesc Index="5" Default = "0">
+	
+</ParamDesc>
+
+	<ParamDesc Index="6" Default = "0">
+	<MeshSet Index="0" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0001" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="1" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0001_nairah" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="2" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0002" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="3" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0003" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="4" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0004" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="5" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0005" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="6" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0005_tear" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="7" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0006" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="8" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0007" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="9" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0008" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="10" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0009" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="11" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0010" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="12" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0011" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="13" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0012" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="14" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0013" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="15" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0014" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="16" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0015" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="17" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0016" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="18" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0017" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="19" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0018" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="20" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0019" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="21" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0022" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="22" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0023" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="23" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0024" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="24" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0025" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="25" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0026" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="26" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0027" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="27" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0028" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="28" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0043" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="29" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0045" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="30" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0046" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="31" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0050" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="32" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0051" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="33" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0052" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="34" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0100" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="35" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0101" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="36" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0102" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="37" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0103" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="38" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0104" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="39" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0105" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="40" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0107" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="41" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0111" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="42" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0111_tear" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="43" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0112" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="44" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0113" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="45" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0114" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="46" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0115" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="47" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0116" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="48" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0117" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="49" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0118" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="50" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0119" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="51" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0120" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="52" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0121" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="53" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0122" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="54" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0123" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="55" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0124" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="56" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0125" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="57" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0126" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="58" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0127" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="59" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0128" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="60" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0129" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="61" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0130" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="62" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0133" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="63" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0134" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="64" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0136" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="65" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0137" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="66" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0138" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="67" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0139" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="68" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0140" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="69" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0141" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="70" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0142" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="71" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0143" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="72" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0201" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="73" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0202" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="74" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0203" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="75" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0204" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="76" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0205" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="77" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0206" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="78" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0207" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="79" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0209" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="80" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0210" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="81" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0212" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="82" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0213" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="83" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0215" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="84" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0401" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="85" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0402" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="86" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0403" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="87" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0404" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="88" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0405" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="89" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0501" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="90" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0502" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="91" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0503" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="92" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0504" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="93" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_0505" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="94" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_4001" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="95" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_4002" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="96" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_4003" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+<MeshSet Index="97" DecorationParamIndex="50" MinValue="0"> 
+<MeshList MeshFileName="cd_phw_00_head_00_4004" IconPath="ui/texture/image/skillimage/cd_icon_bg_kukupot_itemtree_category_00.dds"/>
+</MeshSet>
+	</ParamDesc>
+</MeshParam>

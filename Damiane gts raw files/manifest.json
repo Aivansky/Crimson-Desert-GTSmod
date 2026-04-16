@@ -1,0 +1,11 @@
+{
+  "format": "crimson_browser_mod_v1",
+  "id": "Play as Hexe Marie - Damiane's Default Inner",
+  "title": "Play as Hexe Marie - big3",
+  "author": "uisaki",
+  "version": "1.0",
+  "description": "Can play Damiane with Hexe Marie's face now, and can change her hairstyle freely at the barber as well",
+  "enabled": true,
+  "priority": 3,
+  "files_dir": "files"
+}
