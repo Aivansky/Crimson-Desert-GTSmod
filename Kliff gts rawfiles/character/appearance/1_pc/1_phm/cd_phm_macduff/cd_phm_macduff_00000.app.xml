@@ -14,14 +14,15 @@
         
 	</Hair>
 	<Armor>
-		<Prefab Name="cd_phm_00_cloak_flight_0001"/>
-		<Prefab Name="cd_t0256_hyperspaceplug_0001"/>
+		<Prefab Name="cd_phw_00_ub_inner_0003"/>
 		<Prefab Name="cd_phm_00_parthide_00_0000_w"/>
-		<Prefab Name="cd_phm_00_bag_0000_z"/>
-		<Prefab Name="cd_phm_00_bag_belt_0000"/>
-		<Prefab Name="cd_phm_00_ub_00_0054" Preview="true"/>
-		<Prefab Name="cd_phm_00_cloak_00_0054_s" Preview="true"/>
-		<Prefab Name="cd_phm_00_hand_0054" Preview="true"/>
-		<Prefab Name="cd_phm_00_foot_0054" Preview="true"/>
+		<Prefab Name="cd_phw_00_bag_belt_0000"/>
+		<Prefab Name="cd_phw_00_bag_0000_z"/>
+		<Prefab Name="cd_phw_00_hand_0137_04"/>
+		<Prefab Name="cd_phw_00_foot_0137_01"/>
+		<Prefab Name="cd_phw_00_ub_inner_0003" Preview="true"/>
+		<Prefab Name="cd_phw_01_hand_00_0380_index03" Preview="true"/>
+		<Prefab Name="cd_phw_00_foot_00_0163_index01" Preview="true"/>
+		<Prefab Name="cd_phw_00_cloak_00_0163_index01_t" Preview="true"/>
 	</Armor>
 </Appearance>
